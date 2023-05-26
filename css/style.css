@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    border-bottom: solid #66ac92;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgb(37, 37, 37);
+    width: 80vw;
+    margin-top: 100px;
+
+}
+.card-title{
+    font-size: 50px;
+    color: #f7f7f7;
+}
+.divcard{
+    margin: 50px;
+}
+.card-text{
+    margin-bottom: 40px;
+    font-size: 15px;
+    color: #66ac92;
+}
+.card-input{
+    border-radius: 4px;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+}
+.card-header-1{
+    padding: 10px;
+    width: 80vw;
+    background-color: #a8caba;
+}
+
+.btn{
+    background-color: #a8caba;
+}
+.btn:hover{
+    background: #66ac92;
+}
+#cadastro{
+    color: red;
+}
+#cadastro1{
+    color: green;
+}

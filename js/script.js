@@ -8,10 +8,22 @@ function rtotal(){
 
     let rpercapita = parseFloat(renda / qtdpessoas);
 
-    if (idade < 16 && rpercapita < 1950) {
+    document.getElementById('cadastro').innerHTML = null
+    document.getElementById('cadastro1').innerHTML = null
+    document.getElementById('cadastro').classList.remove
+    document.getElementById('cadastro1').classList.remove
+    
+
+
+    console.log(idade)
+    console.log(rpercapita)
+
+    if (idade < 16 || rpercapita > 1950) {
         document.getElementById('cadastro').innerHTML = "Você não está apto para fazer a matrícula"
-    } else {
-        document.getElementById('cadastro').innerHTML = "Você está apto para fazer a matrícula! Entre em contato com (00) 9 0000-0000"
-    }
-   
+    } else if(idade >= 16 && rpercapita <= 1950) {
+        document.getElementById('cadastro1').innerHTML = "Você está apto para fazer a matrícula! Entre em contato com (00) 9 0000-0000"
+    } 
+    document.getElementById('rendatotal').value = null
+    document.getElementById('quantpessoa').value = null
+    document.getElementById('datanasc').value = null
 }
