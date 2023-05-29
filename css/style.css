@@ -2,19 +2,24 @@
     margin: 0;
     padding: 0
 }
+body{
+    background-color: #f7f7f7;
+}
 main{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .card{
-    border-bottom: solid #66ac92;
+    border-bottom: solid #f7951dad;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: rgb(37, 37, 37);
     width: 80vw;
     margin-top: 100px;
+    background-color: #f7f7f7;
+    margin-bottom: 10px;
 
 }
 .card-title{
@@ -27,7 +32,7 @@ main{
 .card-text{
     margin-bottom: 40px;
     font-size: 15px;
-    color: #66ac92;
+    color: #f7941d;
 }
 .card-input{
     border-radius: 4px;
@@ -38,11 +43,11 @@ main{
 .card-header-1{
     padding: 10px;
     width: 80vw;
-    background-color: #a8caba;
+    background-color: #f7941d;
 }
 
 .btn{
-    background-color: #a8caba;
+    background-color: #f7941d;
 }
 .btn:hover{
     background: #66ac92;
@@ -52,4 +57,64 @@ main{
 }
 #cadastro1{
     color: green;
+}
+.mainindex{
+    
+    display: flex;
+    flex-direction: column;
+}
+.titleindex{
+    margin-bottom: 10px;
+    text-align: center;
+    color: #f7941d;
+}
+.body-card-flex{
+    color: #004a8d;
+}
+.accordion{
+    width: 700px;
+    margin-bottom: 10px;
+
+    text-align: center;
+
+}
+footer{
+    background-color: #004a8d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.divfooter{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    color: #f7f7f7;
+}
+.mapfooter{
+    margin-top: 30px;
+}
+.navbar{
+    background-color: #f7f7f7;
+
+}
+.logo{
+    width: 90px;
+    height: 90px;
+}
+.accordion-button{
+    background-color: #f7f7f7;
+    color: #004a8d;
+}
+.nav-link{
+    color: #004a8d;
+}
+.nav-link:hover{
+    color: #f7941d;
+}
+table, th, tr, td {
+    
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #f7f7f7;
 }

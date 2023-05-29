@@ -19,7 +19,7 @@ function rtotal(){
     console.log(rpercapita)
 
     if (idade < 16 || rpercapita > 1950) {
-        document.getElementById('cadastro').innerHTML = "Você não está apto para fazer a matrícula"
+        document.getElementById('cadastro').innerHTML = "Você não está apto para fazer a matrícula, pois não atende os critérios requiridos pelo programa"
     } else if(idade >= 16 && rpercapita <= 1950) {
         document.getElementById('cadastro1').innerHTML = "Você está apto para fazer a matrícula! Entre em contato com (00) 9 0000-0000"
     } 
