@@ -118,3 +118,9 @@ table, th, tr, td {
     border-collapse: collapse;
     background-color: #f7f7f7;
 }
+.form-aprov{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

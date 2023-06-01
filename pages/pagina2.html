@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -31,85 +32,101 @@
                   </nav>
             </header>
             <main>
-                <div class="card" style="width: 18rem;">
+                <div class="form-aprov">
+                  <div class="card" style="width: 18rem;">
                     <div class="card-header">
-                      Featured
+                      Média
                     </div>
                     <ul class="list-group list-group-flush">
-                         <li class="list-group-item"><strong>Dia 1</strong>
-                            <input class="form-check-input" type="radio" name="dia1" id="dia1">
-                            <label class="form-check-label" for="dia1">Presença</label>
-                            <input class="form-check-input" type="radio" name="dia1" id="dia1nao">
-                            <label class="form-check-label" for="dia1nao">Falta</label>
-                        </li>
-                        <li class="list-group-item"><strong>Dia 2</strong>
-                          <input class="form-check-input" type="radio" name="dia2" id="dia2">
-                          <label class="form-check-label" for="dia2">Presença</label>
-                          <input class="form-check-input" type="radio" name="dia2" id="dia2nao">
-                          <label class="form-check-label" for="dia2nao">Falta</label>
-                      </li>
-                        <li class="list-group-item"><strong>Dia 3</strong>
-                          <input class="form-check-input" type="radio" name="dia3" id="dia3">
-                          <label class="form-check-label" for="dia3">Presença</label>
-                          <input class="form-check-input" type="radio" name="dia3" id="dia3nao">
-                          <label class="form-check-label" for="dia3nao">Falta</label>
-                        </li>
-                        <li class="list-group-item"><strong>Dia 4</strong>
-                          <input class="form-check-input" type="radio" name="dia4" id="dia4">
-                          <label class="form-check-label" for="dia4">Presença</label>
-                          <input class="form-check-input" type="radio" name="dia4" id="dia4nao">
-                          <label class="form-check-label" for="dia4nao">Falta</label>
-                        </li>
-                      <li class="list-group-item"><strong>Dia 5</strong>
-                        <input class="form-check-input" type="radio" name="dia5" id="dia5">
-                        <label class="form-check-label" for="dia5">Presença</label>
-                        <input class="form-check-input" type="radio" name="dia5" id="dia5nao">
-                        <label class="form-check-label" for="dia5nao">Falta</label>
-                      </li>
-                      <li class="list-group-item"><strong>Dia 6</strong>
-                        <input class="form-check-input" type="radio" name="dia6" id="dia6">
-                        <label class="form-check-label" for="dia6">Presença</label>
-                        <input class="form-check-input" type="radio" name="dia6" id="dia6nao">
-                        <label class="form-check-label" for="dia6nao">Falta</label>
-                      </li>
-                      <li class="list-group-item"><strong>Dia 7</strong>
-                        <input class="form-check-input" type="radio" name="dia7" id="dia7">
-                        <label class="form-check-label" for="dia7">Presença</label>
-                        <input class="form-check-input" type="radio" name="dia7" id="dia7nao">
-                        <label class="form-check-label" for="dia7nao">Falta</label>
-                    </li>
-                      <li class="list-group-item"><strong>Dia 8</strong>
-                        <input class="form-check-input" type="radio" name="dia8" id="dia8">
-                        <label class="form-check-label" for="dia8">Presença</label>
-                        <input class="form-check-input" type="radio" name="dia8" id="dia8nao">
-                        <label class="form-check-label" for="dia8nao">Falta</label>
-                    </li>
-                    <li class="list-group-item"><strong>Dia 9</strong>
-                      <input class="form-check-input" type="radio" name="dia9" id="dia9">
-                      <label class="form-check-label" for="dia9">Presença</label>
-                      <input class="form-check-input" type="radio" name="dia9" id="dia9nao">
-                      <label class="form-check-label" for="dia9nao">Falta</label>
-                    </li>
-                    <li class="list-group-item"><strong>Dia 10</strong>
-                      <input class="form-check-input" type="radio" name="dia" id="dia10">
-                      <label class="form-check-label" for="dia10">Presença</label>
-                      <input class="form-check-input" type="radio" name="dia10" id="dia10nao">
-                      <label class="form-check-label" for="dia10nao">Falta</label>
-                    </li>
-                    <li class="list-group-item"><strong>Dia 11</strong>
-                      <input class="form-check-input" type="radio" name="dia11" id="dia11">
-                      <label class="form-check-label" for="dia11">Presença</label>
-                      <input class="form-check-input" type="radio" name="dia11" id="dia11nao">
-                      <label class="form-check-label" for="dia11nao">Falta</label>
-                    </li>
-                    <li class="list-group-item"><strong>Dia 12</strong>
-                      <input class="form-check-input" type="radio" name="dia12" id="dia12">
-                      <label class="form-check-label" for="dia12">Presença</label>
-                      <input class="form-check-input" type="radio" name="dia12" id="dia12nao">
-                      <label class="form-check-label" for="dia12nao">Falta</label>
-                    </li>
+                      <li class="list-group-item"><input id="n1" type="number" class="card-input" placeholder="Nota 1"></li>
+                      <li class="list-group-item"><input id="n2" type="number" class="card-input" placeholder="Nota 2"></li>
+                      <li class="list-group-item"><input id="n3" type="number" class="card-input" placeholder="Nota 3"></li>
                     </ul>
                   </div>
+                  <div class="card" style="width: 18rem;">
+                      <div class="card-header">
+                        Formulário de Presença
+                      </div>
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item"><strong>Dia 1</strong>
+                              <input class="form-check-input" type="radio" name="dia1" id="dia1" value=1>
+                              <label class="form-check-label" for="dia1">Presença</label>
+                              <input class="form-check-input" type="radio" name="dia1" id="dia1nao" value=0>
+                              <label class="form-check-label" for="dia1nao">Falta</label>
+                          </li>
+                          <li class="list-group-item"><strong>Dia 2</strong>
+                            <input class="form-check-input" type="radio" name="dia2" id="dia2" value=1>
+                            <label class="form-check-label" for="dia2">Presença</label>
+                            <input class="form-check-input" type="radio" name="dia2" id="dia2nao" value=0>
+                            <label class="form-check-label" for="dia2nao">Falta</label>
+                        </li>
+                          <li class="list-group-item"><strong>Dia 3</strong>
+                            <input class="form-check-input" type="radio" name="dia3" id="dia3" value=1>
+                            <label class="form-check-label" for="dia3">Presença</label>
+                            <input class="form-check-input" type="radio" name="dia3" id="dia3nao" value=0>
+                            <label class="form-check-label" for="dia3nao">Falta</label>
+                          </li>
+                          <li class="list-group-item"><strong>Dia 4</strong>
+                            <input class="form-check-input" type="radio" name="dia4" id="dia4" value=1>
+                            <label class="form-check-label" for="dia4">Presença</label>
+                            <input class="form-check-input" type="radio" name="dia4" id="dia4nao" value=0>
+                            <label class="form-check-label" for="dia4nao">Falta</label>
+                          </li>
+                        <li class="list-group-item"><strong>Dia 5</strong>
+                          <input class="form-check-input" type="radio" name="dia5" id="dia5" value=1>
+                          <label class="form-check-label" for="dia5">Presença</label>
+                          <input class="form-check-input" type="radio" name="dia5" id="dia5nao" value=0>
+                          <label class="form-check-label" for="dia5nao">Falta</label>
+                        </li>
+                        <li class="list-group-item"><strong>Dia 6</strong>
+                          <input class="form-check-input" type="radio" name="dia6" id="dia6" value=1>
+                          <label class="form-check-label" for="dia6">Presença</label>
+                          <input class="form-check-input" type="radio" name="dia6" id="dia6nao" value=0>
+                          <label class="form-check-label" for="dia6nao">Falta</label>
+                        </li>
+                        <li class="list-group-item"><strong>Dia 7</strong>
+                          <input class="form-check-input" type="radio" name="dia7" id="dia7" value=1>
+                          <label class="form-check-label" for="dia7">Presença</label>
+                          <input class="form-check-input" type="radio" name="dia7" id="dia7nao" value=0>
+                          <label class="form-check-label" for="dia7nao">Falta</label>
+                      </li>
+                        <li class="list-group-item"><strong>Dia 8</strong>
+                          <input class="form-check-input" type="radio" name="dia8" id="dia8" value=1>
+                          <label class="form-check-label" for="dia8">Presença</label>
+                          <input class="form-check-input" type="radio" name="dia8" id="dia8nao" value=0>
+                          <label class="form-check-label" for="dia8nao">Falta</label>
+                      </li>
+                      <li class="list-group-item"><strong>Dia 9</strong>
+                        <input class="form-check-input" type="radio" name="dia9" id="dia9" value=1>
+                        <label class="form-check-label" for="dia9">Presença</label>
+                        <input class="form-check-input" type="radio" name="dia9" id="dia9nao" value=0>
+                        <label class="form-check-label" for="dia9nao">Falta</label>
+                      </li>
+                      <li class="list-group-item"><strong>Dia 10</strong>
+                        <input class="form-check-input" type="radio" name="dia10" id="dia10" value=1>
+                        <label class="form-check-label" for="dia10">Presença</label>
+                        <input class="form-check-input" type="radio" name="dia10" id="dia10nao" value=0>
+                        <label class="form-check-label" for="dia10nao">Falta</label>
+                      </li>
+                      <li class="list-group-item"><strong>Dia 11</strong>
+                        <input class="form-check-input" type="radio" name="dia11" id="dia11" value=1>
+                        <label class="form-check-label" for="dia11">Presença</label>
+                        <input class="form-check-input" type="radio" name="dia11" id="dia11nao" value=0>
+                        <label class="form-check-label" for="dia11nao">Falta</label>
+                      </li>
+                      <li class="list-group-item"><strong>Dia 12</strong>
+                        <input class="form-check-input" type="radio" name="dia12" id="dia12" value=1>
+                        <label class="form-check-label" for="dia12">Presença</label>
+                        <input class="form-check-input" type="radio" name="dia12" id="dia12nao" value=0>
+                        <label class="form-check-label" for="dia12nao">Falta</label>
+                      </li>
+                      </ul>
+                    </div>
+                    <div>
+                        <button onclick="aprovacao()" class="btn mt-3 text-white">Calcular</button>
+                        <div class="mt-3" id="resultado"></div>
+                    </div> 
+                </div>
             </main>
             <footer>
                 <div class="divfooter">
@@ -117,7 +134,7 @@
             </footer>
 
 
-    <script src="js/script.js"></script>
+   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     
 </body>
