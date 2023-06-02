@@ -29,6 +29,15 @@ main{
 .divcard{
     margin: 50px;
 }
+.card-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid lightslategray;
+}
+.body-card-flex{
+    text-align: center;
+}
 .card-text{
     margin-bottom: 40px;
     font-size: 15px;
@@ -95,15 +104,39 @@ footer{
 }
 .navbar{
     background-color: #f7f7f7;
+    border-bottom: 1px solid lightslategray;
 
 }
 .logo{
     width: 90px;
-    height: 90px;
+    height: 70px;
+    margin-left: 50px;
 }
-.accordion-button{
-    background-color: #f7f7f7;
-    color: #004a8d;
+.linha1{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid lightslategray;
+    margin-bottom: 10px;
+    
+}
+
+.banners-secundary{
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 50px;
+    
+}
+.banners-secundary-item{
+    margin-top: 10px;
+}
+.carousel-inner{
+    margin-top: 10px;
+    width: 600px;
+    height: 460px;
+}
+.image-item{
+    width: 100px;
 }
 .nav-link{
     color: #004a8d;
