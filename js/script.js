@@ -21,7 +21,7 @@ function rtotal(){
     if (idade < 16 || rpercapita > 1950) {
         document.getElementById('cadastro').innerHTML = "Você não está apto para fazer a matrícula, pois não atende os critérios requiridos pelo programa"
     } else if(idade >= 16 && rpercapita <= 1950) {
-        document.getElementById('cadastro1').innerHTML = "Você está apto para fazer a matrícula! Entre em contato com (00) 9 0000-0000"
+        document.getElementById('cadastro1').innerHTML = "Você está apto para fazer a matrícula! Entre em contato com (62) 3240-2950"
     } 
     document.getElementById('rendatotal').value = null
     document.getElementById('quantpessoa').value = null
@@ -34,7 +34,6 @@ function calcularmedia(){
     
         let media = (n1 + n2 + n3) / 3;
     
-        document.getElementById("resultado").textContent = "Média: " + media.toFixed(2);
         return media
 }
 
@@ -59,21 +58,27 @@ function calcularPresencas(){
 
 
 function  aprovacao() {
-    let media = calcularmedia();
+    let media = calcularmedia().toFixed(2);
     console.log(media)
     let presencas = calcularPresencas();
     console.log(presencas)
 
-    resultado = document.getElementById("resultado");
-
+    document.getElementById('aprovado').innerHTML = null
+    document.getElementById('recuperacao').innerHTML = null
+    document.getElementById('reprovado').innerHTML = null
+    document.getElementById('aprovado').classList.remove
+    document.getElementById('recuperacao').classList.remove
+    document.getElementById('reprovado').classList.remove
+    
     if (media >= 6.0 && presencas >= 75) {
-        document.getElementById('resultado').innerHTML = "Aluno Aprovado!";
+        document.getElementById('aprovado').innerHTML = "Aluno Aprovado! " + "Média: " + media + " Frequência: " + presencas + "%"
 
     }
     else if (media >= 5 && media < 6 && presencas >= 75) {
-        document.getElementById('resultado').innerHTML =  "Recuperação!";
+        document.getElementById('recuperacao').innerHTML =  "Aluno está na Recuperação! " + "Média: " + media + " Frequência: " + presencas + "%";
     }
     else {
-        document.getElementById('resultado').innerHTML =  "Aluno Reprovado!";
+        document.getElementById('reprovado').innerHTML =  "Aluno Reprovado! " + "Média: " + media + " Frequência: " + presencas + "%";
     }
+    
 }

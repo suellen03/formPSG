@@ -7,13 +7,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/script.js"></script>
-    <title>Document</title>
+    <title>Boletim - SENAC Cora Coralina</title>
 </head>
 <body>
         
             <header>
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                    <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-pg2">
+                    <div class="container-fluid pg2">
                         <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/senac-logo.png" alt=""></a>
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -27,7 +27,7 @@
                             <a class="nav-link" href="pagina1.html">Pré-matrículas</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link " href="pagina2.html">Aprovação</a>
+                            <a class="nav-link " href="pagina2.html">Boletim</a>
                           </li>
                         </ul>
                       </div>
@@ -36,88 +36,88 @@
             </header>
             <main>
                 <div class="form-aprov">
-                  <div class="card" style="width: 18rem;">
-                    <div class="card-header">
+                  <div class="card card1" style="width: 18rem;">
+                    <div class="card-header header-card1">
                       Média
                     </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item"><input id="n1" type="number" class="card-input" placeholder="Nota 1"></li>
-                      <li class="list-group-item"><input id="n2" type="number" class="card-input" placeholder="Nota 2"></li>
-                      <li class="list-group-item"><input id="n3" type="number" class="card-input" placeholder="Nota 3"></li>
+                    <ul class="list-group list-group-flush list-ul">
+                      <li class="list-group-item list-media"><input id="n1" type="number" class="card-input-2" placeholder="Nota 1"></li>
+                      <li class="list-group-item list-media"><input id="n2" type="number" class="card-input-2" placeholder="Nota 2"></li>
+                      <li class="list-group-item list-media"><input id="n3" type="number" class="card-input-2" placeholder="Nota 3"></li>
                     </ul>
                   </div>
-                  <div class="card" style="width: 18rem;">
-                      <div class="card-header">
-                        Formulário de Presença
+                  <div class="card card-form" style="width: 18rem;">
+                      <div class="card-header header-list">
+                        Frequência
                       </div>
                       <ul class="list-group list-group-flush">
-                          <li class="list-group-item"><strong>Dia 1</strong>
+                          <li class="list-group-item list-card"><strong>Dia 1</strong>
                               <input class="form-check-input" type="radio" name="dia1" id="dia1" value=1>
                               <label class="form-check-label" for="dia1">Presença</label>
                               <input class="form-check-input" type="radio" name="dia1" id="dia1nao" value=0>
                               <label class="form-check-label" for="dia1nao">Falta</label>
                           </li>
-                          <li class="list-group-item"><strong>Dia 2</strong>
+                          <li class="list-group-item list-card"><strong>Dia 2</strong>
                             <input class="form-check-input" type="radio" name="dia2" id="dia2" value=1>
                             <label class="form-check-label" for="dia2">Presença</label>
                             <input class="form-check-input" type="radio" name="dia2" id="dia2nao" value=0>
                             <label class="form-check-label" for="dia2nao">Falta</label>
                         </li>
-                          <li class="list-group-item"><strong>Dia 3</strong>
+                          <li class="list-group-item list-card"><strong>Dia 3</strong>
                             <input class="form-check-input" type="radio" name="dia3" id="dia3" value=1>
                             <label class="form-check-label" for="dia3">Presença</label>
                             <input class="form-check-input" type="radio" name="dia3" id="dia3nao" value=0>
                             <label class="form-check-label" for="dia3nao">Falta</label>
                           </li>
-                          <li class="list-group-item"><strong>Dia 4</strong>
+                          <li class="list-group-item list-card"><strong>Dia 4</strong>
                             <input class="form-check-input" type="radio" name="dia4" id="dia4" value=1>
                             <label class="form-check-label" for="dia4">Presença</label>
                             <input class="form-check-input" type="radio" name="dia4" id="dia4nao" value=0>
                             <label class="form-check-label" for="dia4nao">Falta</label>
                           </li>
-                        <li class="list-group-item"><strong>Dia 5</strong>
+                        <li class="list-group-item list-card"><strong>Dia 5</strong>
                           <input class="form-check-input" type="radio" name="dia5" id="dia5" value=1>
                           <label class="form-check-label" for="dia5">Presença</label>
                           <input class="form-check-input" type="radio" name="dia5" id="dia5nao" value=0>
                           <label class="form-check-label" for="dia5nao">Falta</label>
                         </li>
-                        <li class="list-group-item"><strong>Dia 6</strong>
+                        <li class="list-group-item list-card"><strong>Dia 6</strong>
                           <input class="form-check-input" type="radio" name="dia6" id="dia6" value=1>
                           <label class="form-check-label" for="dia6">Presença</label>
                           <input class="form-check-input" type="radio" name="dia6" id="dia6nao" value=0>
                           <label class="form-check-label" for="dia6nao">Falta</label>
                         </li>
-                        <li class="list-group-item"><strong>Dia 7</strong>
+                        <li class="list-group-item list-card"><strong>Dia 7</strong>
                           <input class="form-check-input" type="radio" name="dia7" id="dia7" value=1>
                           <label class="form-check-label" for="dia7">Presença</label>
                           <input class="form-check-input" type="radio" name="dia7" id="dia7nao" value=0>
                           <label class="form-check-label" for="dia7nao">Falta</label>
                       </li>
-                        <li class="list-group-item"><strong>Dia 8</strong>
+                        <li class="list-group-item list-card"><strong>Dia 8</strong>
                           <input class="form-check-input" type="radio" name="dia8" id="dia8" value=1>
                           <label class="form-check-label" for="dia8">Presença</label>
                           <input class="form-check-input" type="radio" name="dia8" id="dia8nao" value=0>
                           <label class="form-check-label" for="dia8nao">Falta</label>
                       </li>
-                      <li class="list-group-item"><strong>Dia 9</strong>
+                      <li class="list-group-item list-card"><strong>Dia 9</strong>
                         <input class="form-check-input" type="radio" name="dia9" id="dia9" value=1>
                         <label class="form-check-label" for="dia9">Presença</label>
                         <input class="form-check-input" type="radio" name="dia9" id="dia9nao" value=0>
                         <label class="form-check-label" for="dia9nao">Falta</label>
                       </li>
-                      <li class="list-group-item"><strong>Dia 10</strong>
+                      <li class="list-group-item list-card"><strong>Dia 10</strong>
                         <input class="form-check-input" type="radio" name="dia10" id="dia10" value=1>
                         <label class="form-check-label" for="dia10">Presença</label>
                         <input class="form-check-input" type="radio" name="dia10" id="dia10nao" value=0>
                         <label class="form-check-label" for="dia10nao">Falta</label>
                       </li>
-                      <li class="list-group-item"><strong>Dia 11</strong>
+                      <li class="list-group-item list-card"><strong>Dia 11</strong>
                         <input class="form-check-input" type="radio" name="dia11" id="dia11" value=1>
                         <label class="form-check-label" for="dia11">Presença</label>
                         <input class="form-check-input" type="radio" name="dia11" id="dia11nao" value=0>
                         <label class="form-check-label" for="dia11nao">Falta</label>
                       </li>
-                      <li class="list-group-item"><strong>Dia 12</strong>
+                      <li class="list-group-item list-card"><strong>Dia 12</strong>
                         <input class="form-check-input" type="radio" name="dia12" id="dia12" value=1>
                         <label class="form-check-label" for="dia12">Presença</label>
                         <input class="form-check-input" type="radio" name="dia12" id="dia12nao" value=0>
@@ -127,8 +127,11 @@
                     </div>
                     <div>
                         <button onclick="aprovacao()" class="btn mt-3 text-white">Calcular</button>
-                        <div class="mt-3" id="resultado"></div>
+                        <br/>
                     </div> 
+                    <div class="mt-3" id="aprovado"></div>
+                    <div class="mt-3" id="recuperacao"></div>
+                    <div class="mt-3" id="reprovado"></div>
                 </div>
             </main>
             <footer>
